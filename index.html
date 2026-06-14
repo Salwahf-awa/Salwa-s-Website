@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Salwa's World 🌊 — Beranda</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="amb amb-jelly1" style="background: rgba(106,176,227,0.1); border-radius: 50%;"></div>
+    <div class="amb amb-jelly2" style="background: rgba(106,176,227,0.08); border-radius: 50%;"></div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-brand">🌊 Salwa's World</div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Beranda</a>
+      <a href="hobi.html">Hobi</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Beranda</a>
+    <a href="hobi.html" onclick="closeMenu()">Hobi</a>
+    <a href="galeri.html" onclick="closeMenu()">Galeri</a>
+    <a href="kontak.html" onclick="closeMenu()">Kontak</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-blob b1"></div>
+    <div class="hero-blob b2"></div>
+    <div class="hero-blob b3"></div>
+    <div class="hero-content">
+      <p class="eyebrow-hero">✦ Selamat Datang di Duniaku</p>
+      <h1 class="hero-title">Halo, Saya<br/><em>Salwa Hasna</em><br/><span>Fadhila</span></h1>
+      <p class="hero-desc">Mahasiswi <strong>Computer Science</strong> yang mencintai seni, alam, dan petualangan digital. Seperti lautan biru, <mark>hidupku penuh warna dan kedalaman</mark>.</p>
+      <div class="hero-chips">
+        <span>🎨 Seni</span><span>🏊 Berenang</span><span>⛺ Alam</span><span>🎮 Gaming</span><span>🍳 Memasak</span>
+      </div>
+      <a href="hobi.html" class="btn-hero">Lihat Hobiku →</a>
+    </div>
+    <div class="hero-right">
+      <div class="profile-wrap">
+        <div class="profile-ring">
+          <img src="foto.jpg.jpeg" alt="Salwa Hasna Fadhila" class="profile-img" onerror="this.onerror=null;this.src='foto.jpg'"/>
+        </div>
+        <span class="profile-badge">Computer Science '26</span>
+        <span class="pdeco d1">🌊</span>
+        <span class="pdeco d2">⭐</span>
+        <span class="pdeco d3">🫧</span>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,50 C240,100 480,0 720,50 C960,100 1200,0 1440,50 L1440,100 L0,100Z" fill="#EAF6FF"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <p class="eyebrow">— Tentang Saya —</p>
+      <div class="about-grid reveal">
+        <div class="about-left">
+          <h2>Siapa <em>Saya?</em></h2>
+          <p>Nama saya <strong>Salwa Hasna Fadhila</strong>, mahasiswi berusia <u>18 tahun</u> dari <strong>Universitas Cakrawala</strong>, program studi <em>Computer Science</em>.</p>
+          <p>Seperti lautan biru yang jadi warna favoritku, saya percaya hidup harus <mark>dalam, luas, dan penuh makna</mark>. Setiap hobi adalah cara saya <strong>bercerita</strong> tentang diri sendiri.</p>
+          <div class="about-badges">
+            <div class="badge-item">💙 Warna Favorit: <strong>Biru</strong></div>
+            <div class="badge-item">📸 <a href="https://instagram.com/hsnf._18" target="_blank">@hsnf._18</a></div>
+            <div class="badge-item">🎓 Universitas Cakrawala</div>
+            <div class="badge-item">💻 Computer Science</div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="id-card">
+            <div class="id-card-header"><span>✦ ID Card</span><span>🌊</span></div>
+            <table class="biodata-table">
+              <tbody>
+                <tr><td class="tl">Nama</td><td class="tv"><strong>Salwa Hasna Fadhila</strong></td></tr>
+                <tr><td class="tl">Usia</td><td class="tv"><b>18 Tahun</b></td></tr>
+                <tr><td class="tl">Universitas</td><td class="tv">Universitas Cakrawala</td></tr>
+                <tr><td class="tl">Prodi</td><td class="tv"><em>Computer Science</em></td></tr>
+                <tr><td class="tl">Instagram</td><td class="tv"><a href="https://instagram.com/hsnf._18" target="_blank">@hsnf._18</a></td></tr>
+                <tr><td class="tl">Warna Favorit</td><td class="tv"><mark>💙 Biru</mark></td></tr>
+                <tr><td class="tl">Hobi</td><td class="tv"><u>Seni · Olahraga · Alam · Gaming</u></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-wave"><svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,50 1440,40 L1440,80 L0,80Z" fill="#1A3A5C"/></svg></div>
+    <div class="footer-inner">
+      <p class="footer-brand">🌊 Salwa's World</p>
+      <p class="footer-copy">© 2026 Salwa Hasna Fadhila · Universitas Cakrawala · Computer Science</p>
+      <p class="footer-quote"><em>"Hidupku seperti lautan — dalam, luas, dan penuh warna."</em></p>
+      <div class="footer-nav">
+        <a href="index.html">Beranda</a>·<a href="hobi.html">Hobi</a>·<a href="galeri.html">Galeri</a>·<a href="kontak.html">Kontak</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+    function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+    window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50));
+    const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Salwa's World 🌊 — Galeri</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-brand">🌊 Salwa's World</div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="hobi.html">Hobi</a>
+      <a href="galeri.html" class="active">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Beranda</a>
+    <a href="hobi.html" onclick="closeMenu()">Hobi</a>
+    <a href="galeri.html" onclick="closeMenu()">Galeri</a>
+    <a href="kontak.html" onclick="closeMenu()">Kontak</a>
+  </div>
+
+  <div class="page-wrapper" style="padding-top: 100px;">
+    <section class="galeri-section">
+      <div class="container">
+        <p class="eyebrow">— Ringkasan & Data —</p>
+        <h2 class="sec-title">Matriks <em>Aktivitas</em></h2>
+        <p class="sec-sub">Data statistik perkembangan hobi dan eksplorasi minat sepanjang waktu.</p>
+        
+        <div class="table-scroll reveal">
+          <table class="hobi-table">
+            <thead>
+              <tr><th>Hobi</th><th>Kategori</th><th>Level Eksplorasi</th><th>Sejak</th><th>Manfaat Utama</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>✏️ <strong>Menggambar</strong></td><td><span class="ttag blue">Seni</span></td><td><div class="lbar"><div class="lfill" style="width:85%"></div></div><small>Mahir</small></td><td><em>2015</em></td><td>Kreativitas & Fokus</td></tr>
+              <tr><td>🎨 <strong>Melukis</strong></td><td><span class="ttag sky">Seni</span></td><td><div class="lbar"><div class="lfill" style="width:70%"></div></div><small>Terampil</small></td><td><em>2018</em></td><td>Ekspresi Diri</td></tr>
+              <tr><td>🏊 <strong>Berenang</strong></td><td><span class="ttag ocean">Olahraga</span></td><td><div class="lbar"><div class="lfill" style="width:80%"></div></div><small>Mahir</small></td><td><em>2013</em></td><td>Kesehatan Fisik</td></tr>
+              <tr><td>🍳 <strong>Memasak</strong></td><td><span class="ttag blue">Kuliner</span></td><td><div class="lbar"><div class="lfill" style="width:75%"></div></div><small>Terampil</small></td><td><em>2020</em></td><td>Eksperimen Menu</td></tr>
+              <tr><td>⛺ <strong>Camping</strong></td><td><span class="ttag sky">Alam</span></td><td><div class="lbar"><div class="lfill" style="width:65%"></div></div><small>Berkembang</small></td><td><em>2022</em></td><td>Ketenangan Mental</td></tr>
+              <tr class="tr-star"><td>🎮 <strong>Bermain Game</strong></td><td><span class="ttag deep">Gaming</span></td><td><div class="lbar"><div class="lfill" style="width:90%"></div></div><small>Expert ⭐</small></td><td><em>2019</em></td><td>Strategi & Kerja Sama</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="quote-card reveal">
+          <div class="quote-jelly">🪼</div>
+          <blockquote><em>"Seperti ombak yang tak pernah berhenti bergerak, aku terus belajar, berkreasi, dan menjelajahi setiap sudut cakrawala baru."</em></blockquote>
+          <cite>— Salwa Hasna Fadhila</cite>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-wave"><svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,50 1440,40 L1440,80 L0,80Z" fill="#1A3A5C"/></svg></div>
+    <div class="footer-inner">
+      <p class="footer-brand">🌊 Salwa's World</p>
+      <p class="footer-copy">© 2026 Salwa Hasna Fadhila · Universitas Cakrawala · Computer Science</p>
+      <div class="footer-nav">
+        <a href="index.html">Beranda</a>·<a href="hobi.html">Hobi</a>·<a href="galeri.html">Galeri</a>·<a href="kontak.html">Kontak</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+    function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+    const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>

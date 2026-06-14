@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Salwa's World 🌊 — Hobi</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-brand">🌊 Salwa's World</div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="hobi.html" class="active">Hobi</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Beranda</a>
+    <a href="hobi.html" onclick="closeMenu()">Hobi</a>
+    <a href="galeri.html" onclick="closeMenu()">Galeri</a>
+    <a href="kontak.html" onclick="closeMenu()">Kontak</a>
+  </div>
+
+  <div class="page-wrapper" style="padding-top: 100px;">
+    <section class="hobi-section">
+      <div class="container">
+        <p class="eyebrow">— Aktivitas & Eksplorasi —</p>
+        <h2 class="sec-title">Dunia <em>yang Saya Cintai</em></h2>
+        <p class="sec-sub">Bagaimana saya menikmati waktu dan berekspresi di luar jam kuliah 🌊</p>
+
+        <div class="hobi-grid">
+          <div class="hcard reveal">
+            <div class="hcard-img-wrap" style="background: linear-gradient(135deg, #C1E5FF, #9CD5FF); display:flex; align-items:center; justify-content:center; font-size:4rem;">🎨</div>
+            <div class="hcard-body">
+              <h3>Seni Visual & Melukis</h3>
+              <p>Ruang bebas tempat saya menuangkan imajinasi, bentuk, dan kombinasi warna ke media kanvas atau digital.</p>
+              <div class="hcard-fact">✨ Media favorit: Cat akrilik & sketsa pensil.</div>
+            </div>
+          </div>
+          <div class="hcard reveal">
+            <div class="hcard-img-wrap" style="background: linear-gradient(135deg, #9CD5FF, #6AB0E3); display:flex; align-items:center; justify-content:center; font-size:4rem;">🏊</div>
+            <div class="hcard-body">
+              <h3>Berenang</h3>
+              <p>Olahraga air yang menjadi pelarian paling tenang untuk menjaga stamina fisik sekaligus menyegarkan pikiran.</p>
+              <div class="hcard-fact">✨ Frekuensi: Rutin di akhir pekan.</div>
+            </div>
+          </div>
+          <div class="hcard reveal">
+            <div class="hcard-img-wrap" style="background: linear-gradient(135deg, #6AB0E3, #2C5F8A); display:flex; align-items:center; justify-content:center; font-size:4rem;">⛺</div>
+            <div class="hcard-body">
+              <h3>Camping & Alam</h3>
+              <p>Menjelajahi keindahan alam terbuka, menikmati api unggun, dan menjauh sejenak dari hiruk-pikuk perkotaan.</p>
+              <div class="hcard-fact">✨ Suasana impian: Pegunungan berkabut sejuk.</div>
+            </div>
+          </div>
+          <div class="hcard reveal">
+            <div class="hcard-img-wrap" style="background: linear-gradient(135deg, #2C5F8A, #1A3A5C); display:flex; align-items:center; justify-content:center; font-size:4rem;">🍳</div>
+            <div class="hcard-body">
+              <h3>Memasak</h3>
+              <p>Mencoba berbagai resep masakan, melakukan eksperimen rasa di dapur, dan menyajikannya untuk orang terdekat.</p>
+              <div class="hcard-fact">✨ Spesialisasi: Hidangan penutup (dessert) manis.</div>
+            </div>
+          </div>
+          <div class="hcard hcard-featured reveal">
+            <div class="featured-ribbon">⭐ Favorit</div>
+            <div class="hcard-img-wrap" style="background: linear-gradient(135deg, #1A3A5C, #1A2A3A); display:flex; align-items:center; justify-content:center; font-size:4rem;">🎮</div>
+            <div class="hcard-body">
+              <h3>Petualangan Virtual</h3>
+              <p>Dunia gaming adalah tempat terbaik mengasah logika strategi kelompok. Sangat menyukai game survival kooperatif.</p>
+              <div class="game-pills">
+                <span class="gpill gpill-fav">🏆 Roblox</span>
+                <span class="gpill">🚢 Raft</span>
+                <span class="gpill">🔪 Dead by Daylight</span>
+              </div>
+              <div class="hcard-fact">✨ Mode: Multiplayer bersama teman dekat.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-wave"><svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,50 1440,40 L1440,80 L0,80Z" fill="#1A3A5C"/></svg></div>
+    <div class="footer-inner">
+      <p class="footer-brand">🌊 Salwa's World</p>
+      <p class="footer-copy">© 2026 Salwa Hasna Fadhila · Universitas Cakrawala · Computer Science</p>
+      <div class="footer-nav">
+        <a href="index.html">Beranda</a>·<a href="hobi.html">Hobi</a>·<a href="galeri.html">Galeri</a>·<a href="kontak.html">Kontak</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+    function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+    const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')}),{threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>

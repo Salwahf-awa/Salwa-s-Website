@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Salwa's World 🌊 — Kontak</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-brand">🌊 Salwa's World</div>
+    <nav class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="hobi.html">Hobi</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="kontak.html" class="active">Kontak</a>
+    </nav>
+    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">Beranda</a>
+    <a href="hobi.html" onclick="closeMenu()">Hobi</a>
+    <a href="galeri.html" onclick="closeMenu()">Galeri</a>
+    <a href="kontak.html" onclick="closeMenu()">Kontak</a>
+  </div>
+
+  <div class="page-wrapper" style="padding-top: 140px; min-height: 75vh;">
+    <section class="kontak-section">
+      <div class="container">
+        <p class="eyebrow">— Hubungi Saya —</p>
+        <h2 class="sec-title">Mari <em>Terhubung</em></h2>
+        <p class="sec-sub">Silakan hubungi saya melalui salah satu platform di bawah ini jika ingin berdiskusi atau berkolaborasi.</p>
+
+        <div class="kontak-grid">
+          <div class="kcard">
+            <div class="kicon">📸</div>
+            <div class="klabel">Instagram</div>
+            <div><a href="https://instagram.com/hsnf._18" target="_blank">@hsnf._18</a></div>
+          </div>
+          
+          <div class="kcard">
+            <div class="kicon">💼</div>
+            <div class="klabel">LinkedIn</div>
+            <div><a href="https://www.linkedin.com/in/salwa-hasna-fadhila-048754390" target="_blank">Salwa Hasna</a></div>
+          </div>
+          
+          <div class="kcard">
+            <div class="kicon">✉️</div>
+            <div class="klabel">Email Resmi</div>
+            <div><strong>salwahasnafadhila@gmail.com</strong></div>
+          </div>
+          
+          <div class="kcard">
+            <div class="kicon">📍</div>
+            <div class="klabel">Domisili</div>
+            <div><strong>Jakarta, Indonesia</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-wave"><svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,0 720,80 1080,40 C1260,20 1380,50 1440,40 L1440,80 L0,80Z" fill="#1A3A5C"/></svg></div>
+    <div class="footer-inner">
+      <p class="footer-brand">🌊 Salwa's World</p>
+      <p class="footer-copy">© 2026 Salwa Hasna Fadhila · Universitas Cakrawala · Computer Science</p>
+      <div class="footer-nav">
+        <a href="index.html">Beranda</a>·<a href="hobi.html">Hobi</a>·<a href="galeri.html">Galeri</a>·<a href="kontak.html">Kontak</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open');}
+    function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');}
+  </script>
+</body>
+</html>
